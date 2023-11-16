@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.team-member {
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 75% 100%, 25% 100%, 0 87%);
+}
