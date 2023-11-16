@@ -5,3 +5,15 @@
 .team-member {
   clip-path: polygon(0 0, 100% 0, 100% 87%, 75% 100%, 25% 100%, 0 87%);
 }
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  background: gainsboro;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #FD7D4C;
+  border-radius: 20px;
+}
