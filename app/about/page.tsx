@@ -57,8 +57,8 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="max-w-[1620px] mx-auto my-28">
-        <div className="flex">
+      <section className="max-w-[1620px] mx-auto my-24 px-4 sm:px-10 ">
+        <div className="flex flex-col gap-y-10">
           <div className="w-full space-y-6">
             <h1 className="text-[40px] font-semibold text-cyan-blue max-w-2xl">Get to Know About Our Company</h1>
             <button className="flex items-center gap-3 bg-red-orange py-4 px-6 text-white rounded-lg">
@@ -84,7 +84,7 @@ export default function About() {
       </section>
       <section className="bg-[url('/about-people.jpeg')] h-[50vh] flex items-center grayscale relative bg-cover">
         <div className="bg-[#000]/60 absolute inset-0 z-[1]" />
-        <div className="w-full flex items-center justify-between max-w-5xl mx-auto relative z-[1]">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto relative z-[1] px-4 sm:px-10">
           <div className="space-y-4 text-white">
             <h1 className="text-[40px] font-semibold max-w-lg">Dream Until Your Dreams Come True</h1>
             <p className="max-w-xl leading-loose">
@@ -96,8 +96,8 @@ export default function About() {
           </button>
         </div>
       </section>
-      <section className="max-w-[1620px] mx-auto -translate-y-16 relative z-[1]">
-        <div className="flex items-center gap-y-3">
+      <section className="max-w-[1620px] mx-auto md:-translate-y-16 relative z-[1] px-4 sm:px-10">
+        <div className="flex flex-col md:flex-row items-center gap-y-3">
           <div className="w-full flex flex-col items-center space-y-6 p-16 shadow-xl shadow-[#e4e4e4] rounded-l-2xl bg-white">
             <Image src="/svgs/training-bag.svg" alt="playbutton" width={50} height={50} draggable={false} />
             <h1 className="text-3xl font-bold text-center">
@@ -106,7 +106,7 @@ export default function About() {
             </h1>
             <p className="text-[#8993A0] text-center max-w-sm leading-relaxed">Elit eget gravida cum sociis natoque penatibus, amet aliquam id diam.</p>
           </div>
-          <div className="w-full flex flex-col items-center space-y-6 p-24 shadow-xl shadow-[#e4e4e4] rounded-2xl z-[2] bg-white">
+          <div className="w-full flex flex-col items-center space-y-6 p-16 md:p-24 shadow-xl shadow-[#e4e4e4] rounded-2xl z-[2] bg-white">
             <Image src="/svgs/traning-comp.svg" alt="playbutton" width={50} height={50} draggable={false} />
             <h1 className="text-3xl font-bold max-w-md text-center">Compliance & Regulatory Training</h1>
             <p className="text-[#8993A0] text-center max-w-sm leading-relaxed">Dignissim suspendisse in est ante, habitasse platea dictumst purus.</p>
@@ -148,7 +148,7 @@ export default function About() {
             customized solutions that empower businesses to overcome challenges, seize opportunities, and achieve sustainable growth.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-10 mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-20">
           <div className="flex flex-col items-center space-y-4">
             <Image src="/svgs/collaboration-ico.svg" alt="ico" width={80} height={80} draggable={false} />
             <h1 className="text-2xl font-semibold">Collaboration</h1>
@@ -179,7 +179,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="max-w-[1620px] mx-auto my-28">
+      <section className="max-w-[1620px] mx-auto my-28 px-4 sm:px-10">
         <h1 className="text-[#8893A0]">OUR TEAM</h1>
         <h1 className="text-[40px] max-w-lg font-semibold mt-2">Experience and integrity by our team</h1>
         <p className="text-[#8993A0] max-w-2xl leading-[1.8] mt-3">
@@ -192,7 +192,7 @@ export default function About() {
           </span>
         </button>
       </section>
-      <section className="max-w-[1620px] mx-auto mb-28">
+      <section className="max-w-[1620px] mx-auto mb-28 px-4 sm:px-10">
         <div className="bg-[#FD7D4C] p-10 rounded-lg flex items-center justify-between">
           <div className="text-xl flex gap-3">
             <MailIcon className="text-white" />

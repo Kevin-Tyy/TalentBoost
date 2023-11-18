@@ -41,13 +41,13 @@ export default function page() {
         </nav>
       </section>
       <section className="bg-[#F3F7F9]">
-        <div className="max-w-[1620px] mx-auto py-16 px-10 flex items-center gap-20">
+        <div className="max-w-[1620px] mx-auto py-16 px-5 md:px-10 flex flex-col lg:flex-row items-center gap-20">
           <div className="w-full space-y-10">
             <h1 className="text-4xl font-semibold max-w-md leading-[1.4]">Data Governance Solutions</h1>
             <div className="space-y-8 text-[#5A687B] max-w-3xl">
               <p className="leading-[1.8]">
-                TalentBoost embraces a data-centric approach to drive informed decision-making and deliver impactful results. We understand that data is a
-                powerful asset that can unlock valuable insights and drive effective strategies.
+                <span className="font-bold">TalentBoost</span> embraces a data-centric approach to drive informed decision-making and deliver impactful results.
+                We understand that data is a powerful asset that can unlock valuable insights and drive effective strategies.
               </p>
               <p className="leading-[1.8]">
                 With our data-centric approach, we help our clients harness the power of data to gain a deeper understanding of their business landscape,
@@ -67,12 +67,12 @@ export default function page() {
             </div>
             <button className="flex items-center gap-3 bg-red-orange py-3 px-6 text-white rounded-md uppercase">Get Started</button>
           </div>
-          <div className="w-4/5 select-none">
+          <div className="lg:w-4/5 select-none">
             <Image src="/enterprise-solutions.png" alt="solutions" width={1000} height={1000} draggable={false} />
           </div>
         </div>
       </section>
-      <section className="max-w-[1620px] mx-auto my-28">
+      <section className="max-w-[1620px] mx-auto my-28 px-5 sm:px-10 ">
         <h1 className="text-[#8893A0]">OUR TEAM</h1>
         <h1 className="text-[40px] max-w-lg font-semibold mt-2">Experience and integrity by our team</h1>
         <p className="text-[#8993A0] max-w-2xl leading-[1.8] mt-3">
@@ -85,7 +85,7 @@ export default function page() {
           </span>
         </button>
       </section>
-      <section className="max-w-[1620px] mx-auto mb-28">
+      <section className="max-w-[1620px] mx-auto mb-28 px-5 sm:px-10 ">
         <div className="bg-[#FD7D4C] p-10 rounded-lg flex items-center justify-between">
           <div className="text-xl flex gap-3">
             <MailIcon className="text-white" />

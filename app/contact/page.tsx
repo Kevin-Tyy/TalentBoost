@@ -48,8 +48,8 @@ export default function page() {
               Reach out to us today and let's discuss how TalentBoost can empower your organization and boost your team's potential.{" "}
             </p>
           </div>
-          <div className="flex w-full max-w-7xl mx-auto shadow-2xl rounded-3xl mt-16">
-            <div className="bg-[#132742] w-4/5 rounded-l-3xl p-10 flex flex-col justify-between min-h-[700px] relative overflow-hidden">
+          <div className="flex flex-col-reverse md:flex-row w-full max-w-7xl mx-auto shadow-2xl rounded-3xl mt-16">
+            <div className="bg-[#132742] md:w-4/5 rounded-b-3xl md:rounded-l-3xl p-10 flex flex-col justify-between min-h-[700px] relative overflow-hidden">
               <div className="space-y-2">
                 <h1 className="text-white text-3xl font-semibold">Contact Information</h1>
                 <p className="text-[#C9C9C9]">Say something to start a live chat!</p>
@@ -82,7 +82,7 @@ export default function page() {
               <div className="h-32 w-32 bg-[#8f8f8f24] absolute right-14 bottom-14 rounded-full z-[1]" />
               <div className="h-64 w-64 bg-[#163D72] absolute -right-24 -bottom-24 rounded-full" />
             </div>
-            <div className="w-full p-10">
+            <div className="w-full p-6 md:p-10">
               <Form />
             </div>
           </div>

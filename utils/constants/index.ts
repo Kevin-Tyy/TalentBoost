@@ -25,27 +25,27 @@ export const teamMembers = [
     role: "P&G",
   },
   {
-    image: "/person-5.png",
+    image: "/person-6.png",
     names: "Maria Edelson",
     role: "P&G",
   },
   {
-    image: "/person-5.png",
+    image: "/person-7.png",
     names: "Maria Edelson",
     role: "P&G",
   },
   {
-    image: "/person-5.png",
+    image: "/person-8.png",
     names: "Maria Edelson",
     role: "P&G",
   },
   {
-    image: "/person-5.png",
+    image: "/person-9.png",
     names: "Maria Edelson",
     role: "P&G",
   },
   {
-    image: "/person-5.png",
+    image: "/person-10.png",
     names: "Maria Edelson",
     role: "P&G",
   },

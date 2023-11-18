@@ -50,26 +50,26 @@ export default function Form() {
         </div>
         <div>
           <p>Select Subject</p>
-          <div className="flex gap-6 mt-3">
-            <div className="flex items- gap-3">
+          <div className="flex flex-wrap gap-6 mt-3">
+            <div className="flex gap-3">
               <input type="radio" name="general-inquiry" id="general-inquiry" className="cursor-pointer" />
               <label htmlFor="general-inquiry" className="text-[#8D8D8D] text-sm">
                 General Inquiry
               </label>
             </div>
-            <div className="flex items- gap-3">
+            <div className="flex gap-3">
               <input type="radio" name="general-inquiry" id="general-inquiry-2" className="cursor-pointer" />
               <label htmlFor="general-inquiry-2" className="text-[#8D8D8D] text-sm">
                 General Inquiry
               </label>
             </div>
-            <div className="flex items- gap-3">
+            <div className="flex gap-3">
               <input type="radio" name="general-inquiry" id="general-inquiry-3" className="cursor-pointer" />
               <label htmlFor="general-inquiry-3" className="text-[#8D8D8D] text-sm">
                 General Inquiry
               </label>
             </div>
-            <div className="flex items- gap-3">
+            <div className="flex gap-3">
               <input type="radio" name="general-inquiry" id="general-inquiry-4" className="cursor-pointer" />
               <label htmlFor="general-inquiry-4" className="text-[#8D8D8D] text-sm">
                 General Inquiry

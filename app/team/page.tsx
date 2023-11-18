@@ -9,8 +9,8 @@ export default function page() {
     <main className="text-cyan-blue">
       <section>
         <div className="relative !h-[80vh]">
-          <div className="bg-[#000]/40 absolute inset-0 z-[1]" />
-          <img src="/about-hero-bg.jpeg" className="absolute h-[80vh] w-full object-cover filter grayscale contrast-[1.2]" />
+          <div className="bg-[#000]/60 absolute inset-0 z-[1]" />
+          <img src="/bg-teams.png" className="absolute h-[80vh] w-full object-cover filter grayscale contrast-[1.2]" />
           <div className="relative z-[2] h-full w-full flex flex-col">
             <nav className="flex w-full items-center justify-between max-w-[1620px] px-4 pt-5 md:pt-10 md:px-10 mx-auto">
               <div>
@@ -45,9 +45,9 @@ export default function page() {
               <Menu className="block md:hidden" />
             </nav>
             <div className="flex-1 h-full flex justify-center items-center">
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <h1 className="text-6xl font-bold text-white text-center">Our Team</h1>
-                <p className="text-white text-center max-w-xl leading-relaxed">
+                <p className="text-white text-center max-w-xl leading-loose">
                   Meet our passionate and experienced team of experts dedicated to helping you achieve your talent development goals.
                 </p>
               </div>
