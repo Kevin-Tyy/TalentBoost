@@ -2,43 +2,14 @@ import { ArrowRight, ChevronDown, MailIcon, Menu, SearchIcon } from "lucide-reac
 import Image from "next/image";
 import React from "react";
 import Footer from "../components/Footer";
+import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function page() {
   return (
     <main className="text-[#132742]">
       <section className="bg-[#F3F7F9]">
-        <nav className="flex items-center justify-between max-w-[1620px] px-4 pt-5 md:pt-10 md:px-10 mx-auto">
-          <div>
-            <h1 className="text-[#132742] text-3xl">Logo</h1>
-          </div>
-          <div className="hidden md:flex items-center gap-10">
-            <div className="cursor-pointer">
-              <h1 className="text-[#132742]">About Us</h1>
-            </div>
-            <div className="flex gap-[10px] items-center cursor-pointer">
-              <h1 className="text-[#132742]">Enterprise Solution</h1>
-              <ChevronDown className="text-[#132742] w-[20px]" />
-            </div>
-            <div className="flex gap-[10px] items-center cursor-pointer">
-              <h1 className="text-[#132742]">Training Solution</h1>
-              <ChevronDown className="text-[#132742] w-[20px]" />
-            </div>
-            <div className="cursor-pointer">
-              <h1 className="text-[#132742]">Enterprise Solution</h1>
-            </div>
-            <div className="cursor-pointer">
-              <h1 className="text-[#132742]">Contact Us</h1>
-            </div>
-            <div className="w-[2px] bg-[#000000]/20 h-[28px]"></div>
-            <button className="cursor-pointer">
-              <SearchIcon className="text-[#132742]" />
-            </button>
-            <button className="border-[2px] border-[#FD7D4C] rounded-lg font-semibold h-[50px] w-[140px] hover:bg-neutral-100/60 transition duration-300">
-              Sign Up
-            </button>
-          </div>
-          <Menu className="block md:hidden" />
-        </nav>
+        <Navbar />
       </section>
       <section className="bg-[#F3F7F9]">
         <div className="max-w-[1620px] mx-auto py-16 px-5 md:px-10 flex flex-col lg:flex-row items-center gap-20">

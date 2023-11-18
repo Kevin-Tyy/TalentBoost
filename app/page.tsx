@@ -4,6 +4,7 @@ import React from "react";
 import ContactForm from "./components/ContactForm";
 import { ChevronDown, Menu, SearchIcon } from "lucide-react";
 import Footer from "./components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,28 +16,38 @@ export default function Home() {
               <h1 className="text-[#132742] text-3xl">Logo</h1>
             </div>
             <div className="hidden md:flex items-center gap-10">
-              <div className="cursor-pointer">
-                <h1 className="text-lg text-[#132742]">About Us</h1>
-              </div>
-              <div className="flex gap-[10px] items-center cursor-pointer">
-                <h1 className="text-lg text-[#132742]">Enterprise Solution</h1>
-                <ChevronDown className="text-[#132742] w-[20px]" />
-              </div>
-              <div className="flex gap-[10px] items-center cursor-pointer">
-                <h1 className="text-lg text-[#132742]">Training Solution</h1>
-                <ChevronDown className="text-[#132742] w-[20px]" />
-              </div>
-              <div className="cursor-pointer">
-                <h1 className="text-lg text-[#132742]">Enterprise Solution</h1>
-              </div>
-              <div className="cursor-pointer">
-                <h1 className="text-lg text-[#132742]">Contact Us</h1>
-              </div>
+              <Link href="/about">
+                <div className="cursor-pointer">
+                  <h1>About Us</h1>
+                </div>
+              </Link>
+              <Link href="/enterprise-solutions">
+                <div className="flex gap-[10px] items-center cursor-pointer">
+                  <h1>Enterprise Solution</h1>
+                  <ChevronDown className="text-white w-[20px]" />
+                </div>
+              </Link>
+              <Link href="/training-solutions">
+                <div className="flex gap-[10px] items-center cursor-pointer">
+                  <h1>Training Solution</h1>
+                  <ChevronDown className="text-white w-[20px]" />
+                </div>
+              </Link>
+              <Link href="/enterprise-solutions">
+                <div className="cursor-pointer">
+                  <h1>Our team</h1>
+                </div>
+              </Link>
+              <Link href="/contact">
+                <div className="cursor-pointer">
+                  <h1>Contact Us</h1>
+                </div>
+              </Link>
               <div className="w-[2px] bg-[#000000]/20 h-[28px]"></div>
               <button className="cursor-pointer">
-                <SearchIcon className="text-[#132742]" />
+                <SearchIcon />
               </button>
-              <button className="border-[2px] border-[#FD7D4C] rounded-xl font-semibold h-[50px] w-[140px] hover:bg-neutral-100/60 transition duration-300">
+              <button className="border-[2px] border-[#FD7D4C] rounded-lg font-semibold h-[50px] w-[140px] hover:bg-[#fff]/10 transition duration-300 ">
                 Sign Up
               </button>
             </div>

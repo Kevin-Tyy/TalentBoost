@@ -2,6 +2,7 @@ import { ArrowRight, ChevronDown, MailIcon, Menu, SearchIcon } from "lucide-reac
 import Image from "next/image";
 import React from "react";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default function About() {
   return (
@@ -11,38 +12,9 @@ export default function About() {
           <div className="bg-[#000]/40 absolute inset-0 z-[1]" />
           <img src="/about-hero-bg.jpeg" className="absolute h-[80vh] w-full object-cover filter grayscale contrast-[1.2]" />
           <div className="relative z-[2] h-full w-full flex flex-col">
-            <nav className="flex w-full items-center justify-between max-w-[1620px] px-4 pt-5 md:pt-10 md:px-10 mx-auto">
-              <div>
-                <h1 className="text-[#fff] text-3xl">Logo</h1>
-              </div>
-              <div className="hidden md:flex items-center gap-10">
-                <div className="cursor-pointer">
-                  <h1 className=" text-[#fff]">About Us</h1>
-                </div>
-                <div className="flex gap-[10px] items-center cursor-pointer">
-                  <h1 className=" text-[#fff]">Enterprise Solution</h1>
-                  <ChevronDown className="text-white w-[20px]" />
-                </div>
-                <div className="flex gap-[10px] items-center cursor-pointer">
-                  <h1 className=" text-[#fff]">Training Solution</h1>
-                  <ChevronDown className="text-white w-[20px]" />
-                </div>
-                <div className="cursor-pointer">
-                  <h1 className=" text-[#fff]">Enterprise Solution</h1>
-                </div>
-                <div className="cursor-pointer">
-                  <h1 className=" text-[#fff]">Contact Us</h1>
-                </div>
-                <div className="w-[2px] bg-[#fff]/20 h-[28px]"></div>
-                <button className="cursor-pointer">
-                  <SearchIcon className="text-white" />
-                </button>
-                <button className="border-[2px] border-[#FD7D4C] rounded-lg font-semibold h-[50px] w-[140px] hover:bg-[#fff]/10 transition duration-300 text-white">
-                  Sign Up
-                </button>
-              </div>
-              <Menu className="block md:hidden" />
-            </nav>
+            <div className="w-full">
+              <Navbar isDark={true} />
+            </div>
             <div className="flex-1 h-full flex justify-center items-center">
               <div className="space-y-4">
                 <h1 className="text-6xl font-bold text-white text-center">About Us</h1>
