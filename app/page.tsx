@@ -5,54 +5,14 @@ import ContactForm from "./components/ContactForm";
 import { ChevronDown, Menu, SearchIcon } from "lucide-react";
 import Footer from "./components/Footer";
 import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden text-[#132742]">
       <div className="bg-[#F8F3F0]">
         <section>
-          <nav className="flex items-center justify-between max-w-[1620px] px-4 pt-5 md:pt-10 md:px-10 mx-auto">
-            <div>
-              <h1 className="text-[#132742] text-3xl">Logo</h1>
-            </div>
-            <div className="hidden md:flex items-center gap-10">
-              <Link href="/about">
-                <div className="cursor-pointer">
-                  <h1>About Us</h1>
-                </div>
-              </Link>
-              <Link href="/enterprise-solutions">
-                <div className="flex gap-[10px] items-center cursor-pointer">
-                  <h1>Enterprise Solution</h1>
-                  <ChevronDown className="text-white w-[20px]" />
-                </div>
-              </Link>
-              <Link href="/training-solutions">
-                <div className="flex gap-[10px] items-center cursor-pointer">
-                  <h1>Training Solution</h1>
-                  <ChevronDown className="text-white w-[20px]" />
-                </div>
-              </Link>
-              <Link href="/enterprise-solutions">
-                <div className="cursor-pointer">
-                  <h1>Our team</h1>
-                </div>
-              </Link>
-              <Link href="/contact">
-                <div className="cursor-pointer">
-                  <h1>Contact Us</h1>
-                </div>
-              </Link>
-              <div className="w-[2px] bg-[#000000]/20 h-[28px]"></div>
-              <button className="cursor-pointer">
-                <SearchIcon />
-              </button>
-              <button className="border-[2px] border-[#FD7D4C] rounded-lg font-semibold h-[50px] w-[140px] hover:bg-[#fff]/10 transition duration-300 ">
-                Sign Up
-              </button>
-            </div>
-            <Menu className="block md:hidden" />
-          </nav>
+          <Navbar />
         </section>
         <section>
           <div className="max-w-[1620px] mx-auto px-4 mt-28 pb-20 md:px-10">
