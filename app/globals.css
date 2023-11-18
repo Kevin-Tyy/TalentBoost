@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
 
 .team-member {
   clip-path: polygon(0 0, 100% 0, 100% 87%, 75% 100%, 25% 100%, 0 87%);
@@ -14,6 +20,6 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #FD7D4C;
+  background-color: #fd7d4c;
   border-radius: 20px;
 }

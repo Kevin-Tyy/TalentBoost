@@ -2,11 +2,12 @@ import { teamMembers } from "@/utils/constants";
 import Image from "next/image";
 import React from "react";
 import ContactForm from "./components/ContactForm";
-import { Menu } from "lucide-react";
+import { ChevronDown, Menu, SearchIcon } from "lucide-react";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden text-[#132742]">
       <div className="bg-[#F8F3F0]">
         <section>
           <nav className="flex items-center justify-between max-w-[1620px] px-4 pt-5 md:pt-10 md:px-10 mx-auto">
@@ -19,11 +20,11 @@ export default function Home() {
               </div>
               <div className="flex gap-[10px] items-center cursor-pointer">
                 <h1 className="text-lg text-[#132742]">Enterprise Solution</h1>
-                <img src="/svgs/chevron-down.svg" alt="chevron-down" className="w-[10px]" />
+                <ChevronDown className="text-[#132742] w-[20px]" />
               </div>
               <div className="flex gap-[10px] items-center cursor-pointer">
                 <h1 className="text-lg text-[#132742]">Training Solution</h1>
-                <img src="/svgs/chevron-down.svg" alt="chevron-down" className="w-[10px]" />
+                <ChevronDown className="text-[#132742] w-[20px]" />
               </div>
               <div className="cursor-pointer">
                 <h1 className="text-lg text-[#132742]">Enterprise Solution</h1>
@@ -33,7 +34,7 @@ export default function Home() {
               </div>
               <div className="w-[2px] bg-[#000000]/20 h-[28px]"></div>
               <button className="cursor-pointer">
-                <Image src="/svgs/search.svg" alt="search" width={24} height={24} />
+                <SearchIcon className="text-[#132742]" />
               </button>
               <button className="border-[2px] border-[#FD7D4C] rounded-xl font-semibold h-[50px] w-[140px] hover:bg-neutral-100/60 transition duration-300">
                 Sign Up
@@ -237,8 +238,8 @@ export default function Home() {
       <section>
         <div className="max-w-[1620px] mx-auto px-4 md:px-10">
           <div className="grid grid-cols-1 min-[400px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10">
-            {teamMembers.map((member) => (
-              <div className="team-member w-[200px] min-h-[300px] relative overflow-hidden rounded-t-2xl">
+            {teamMembers.slice(0, 5).map((member, index) => (
+              <div key={index} className="team-member w-[200px] min-h-[300px] relative overflow-hidden rounded-t-2xl">
                 <Image src={member.image} alt="member" width={1000} height={1000} className="h-full object-cover" />
                 <div className="absolute bottom-0 h-24 left-0 right-0 backdrop-blur-lg bg-black/30 z-[1] flex flex-col justify-center items-center">
                   <h1 className="text-xl text-white">{member.names}</h1>
@@ -262,47 +263,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#132742] pt-10 pb-4 px-5 md:px-10 ">
-        <footer className="max-w-[1620px] mx-auto space-y-10">
-          <div className="flex flex-col md:flex-row justify-between gap-y-14">
-            <div className="w-full">
-              <h1 className="text-2xl text-white">Logo</h1>
-              <p className="text-[#8993A0] leading-loose max-w-2xl mt-6">
-                Lorem ipsum dolor sit amet consectetur. Nunc dui massa diam nibh tellus donec volutpat sed tempus. Euismod scelerisque mattis est tortor.
-              </p>
-            </div>
-            <div className="space-y-6 md:w-1/3">
-              <h1 className="font-semibold text-white text-lg">Links</h1>
-              <ul className="space-y-6">
-                <li className="text-[#D0D4D9]">Account</li>
-                <li className="text-[#D0D4D9]">Contact Us</li>
-              </ul>
-            </div>
-            <div className="space-y-6 md:w-1/3">
-              <h1 className="font-semibold text-white text-lg whitespace-nowrap">Reach Us Anytime</h1>
-              <div className="flex gap-2 items-center text-[#D0D4D9]">
-                <img src="/svgs/phone.svg" className="w-6" />
-                <p>(855) 616-0999</p>
-              </div>
-              <div className="flex gap-2 items-center text-[#D0D4D9]">
-                <img src="/svgs/mail.svg" className="w-6" />
-                <p>sales@company.io</p>
-              </div>
-            </div>
-          </div>
-          <div className="space-y-4">
-            <h1 className="text-white">Follow Us</h1>
-            <div className="flex gap-5">
-              <img src="/svgs/twitter.svg" className="w-7" />
-              <img src="/svgs/instagram.svg" className="w-7" />
-              <img src="/svgs/facebook.svg" className="w-7" />
-              <img src="/svgs/google.svg" className="w-7" />
-              <img src="/svgs/linkedin.svg" className="w-7" />
-            </div>
-          </div>
-          <p className="text-center text-[#fff]/40">© Company Name 2023. All Rights Reserved.</p>
-        </footer>
-      </section>
+      <Footer />
     </main>
   );
 }
