@@ -11,7 +11,7 @@ export default function page() {
         <Navbar />
       </section>
       <section>
-        <div className="max-w-[1620px] mx-auto px-4 mt-20 mb-28 md:px-10 relative z-[1]">
+        <div className="max-w-[1620px] mx-auto px-4 pt-28 mb-28 md:px-10 relative z-[1]">
           <div className="space-y-1">
             <h1 className="text-[40px] text-[#132742] font-bold leading-[1.4] text-center">Get in Touch</h1>
             <p className="text-[#8993A0] text-center md:max-w-2xl mx-auto leading-relaxed">

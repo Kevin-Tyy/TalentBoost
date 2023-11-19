@@ -2,14 +2,29 @@
 
 import { ArrowRight, ChevronDown, MailIcon, SearchIcon, X } from "lucide-react";
 import Link from "next/link";
+import { useRef, useEffect } from "react";
 interface Props {
   isDark?: boolean;
   onClose: () => void;
   isOpen?: boolean;
 }
 export default function Sidebar({ isDark, onClose, isOpen }: Props) {
+  const mainRef = useRef<HTMLElement | null>(null);
+  const handleClickOutside = (event: any) => {
+    if (mainRef.current && !mainRef.current.contains(event.target)) {
+      onClose();
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <nav
+      ref={mainRef}
       className={`${
         isOpen ? "w-[300px]" : "w-0"
       } overflow-hidden text-[#132742] bg-white fixed right-0 top-0 bottom-0 h-full min-h-screen shadow-2xl z-[50] transition-[width]`}>
@@ -47,7 +62,7 @@ export default function Sidebar({ isDark, onClose, isOpen }: Props) {
             </div>
           </Link>
           <button className="cursor-pointer flex items-center gap-2">
-            <SearchIcon size={20}/>
+            <SearchIcon size={20} />
             <p>Search..</p>
           </button>
         </div>

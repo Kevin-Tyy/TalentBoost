@@ -15,7 +15,7 @@ export default function Home() {
           <Navbar />
         </section>
         <section>
-          <div className="max-w-[1620px] mx-auto px-4 mt-28 pb-20 md:px-10">
+          <div className="max-w-[1620px] mx-auto px-4 pt-28 pb-20 md:px-10">
             <div className="flex flex-col md:flex-row items-center justify-between gap-y-10">
               <div className="md:max-w-[50%] space-y-8">
                 <h1 className="text-5xl text-[#132742] font-bold leading-[1.4] capitalize">

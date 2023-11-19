@@ -23,3 +23,28 @@
   background-color: #fd7d4c;
   border-radius: 20px;
 }
+
+/* styles/globals.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: #fff; */
+  z-index: 99999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar.visible {
+  transform: translateY(0);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+/* Add more styles as needed */

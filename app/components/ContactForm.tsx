@@ -28,8 +28,10 @@ export default function ContactForm() {
                 <SelectValue placeholder="How did you hear about us?" />
               </SelectTrigger>
               <SelectContent>
-                {options.map((option) => (
-                  <SelectItem value={option.value}>{option.option}</SelectItem>
+                {options.map((option, index) => (
+                  <SelectItem key={index} value={option.value}>
+                    {option.option}
+                  </SelectItem>
                 ))}
               </SelectContent>
             </Select>
