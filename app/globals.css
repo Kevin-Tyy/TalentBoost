@@ -47,4 +47,26 @@
   transform: translateY(-100%);
 }
 
-/* Add more styles as needed */
+.swiper{
+  padding: 100px !important;
+  /* height: calc(100%); */
+}
+
+.swiper-pagination-bullets {
+	margin-bottom: 10px;
+}
+.swiper-pagination-bullet {
+  /* transform: translateY(30px); */
+	padding: 7px;
+	background-color: #FD7D4C !important;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none !important;
+}
+.swiper-slider div{
+  width: 100%;
+}
+.swiper-slide-shadow-left, .swiper-slide-shadow-coverflow{
+  display: none;
+}

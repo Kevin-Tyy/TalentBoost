@@ -144,3 +144,31 @@ export const certificates = [
     description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
   },
 ];
+
+export const courses = [
+  {
+    image: "/course-1.png",
+    name: "Course Name",
+    description: "Lorem ipsum dolor sit amet consectetur. Id molestie nulla.",
+  },
+  {
+    image: "/course-2.png",
+    name: "Course Name",
+    description: "Lorem ipsum dolor sit amet consectetur. Id molestie nulla.",
+  },
+  {
+    image: "/course-3.png",
+    name: "Course Name",
+    description: "Lorem ipsum dolor sit amet consectetur. Id molestie nulla.",
+  },
+  {
+    image: "/course-4.png",
+    name: "Course Name",
+    description: "Lorem ipsum dolor sit amet consectetur. Id molestie nulla.",
+  },
+  {
+    image: "/course-5.png",
+    name: "Course Name",
+    description: "Lorem ipsum dolor sit amet consectetur. Id molestie nulla.",
+  },
+];

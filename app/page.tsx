@@ -1,4 +1,4 @@
-import { teamMembers } from "@/utils/constants";
+import { courses, teamMembers } from "@/utils/constants";
 import Image from "next/image";
 import React from "react";
 import ContactForm from "./components/ContactForm";
@@ -6,6 +6,15 @@ import { ChevronDown, Menu, SearchIcon } from "lucide-react";
 import Footer from "./components/Footer";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import Slider from "./components/CourseSlider";
 
 export default function Home() {
   return (
@@ -185,6 +194,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <Slider />
       </section>
       <section className="">
         <div className="max-w-[1620px] mx-auto px-4 py-14 md:px-10">
