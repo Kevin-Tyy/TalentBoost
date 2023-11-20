@@ -13,7 +13,7 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import { courses } from "@/utils/constants";
 import Image from "next/image";
 
-export default function App() {
+export default function Slider() {
   return (
     <div className="flex justify-center">
       <Swiper
@@ -21,7 +21,21 @@ export default function App() {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={5}
+        slidesPerView={"auto"}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -38,7 +52,7 @@ export default function App() {
             <div className="p-10 bg-white shadow-xl w-full h-full rounded-2xl space-y-3">
               <Image src={course.image} alt={course.name} width={1000} height={1000} />
               <h1 className="text-xl font-semibold">{course.name}</h1>
-              <p className="text-sm text-[#8993A0]">{course.description}</p>
+              <p className="text-base text-[#8993A0]">{course.description}</p>
             </div>
           </SwiperSlide>
         ))}
