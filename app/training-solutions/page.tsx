@@ -12,7 +12,7 @@ export default function page() {
         <Navbar />
       </section>
       <section className="bg-[#F8F3F0]">
-        <div className="max-w-[1620px] mx-auto py-16 px-5 sm:px-10 flex flex-col lg:flex-row-reverse items-center gap-20">
+        <div className="max-w-[1620px] mx-auto mt-6 py-16 px-5 sm:px-10 flex flex-col lg:flex-row-reverse items-center gap-20">
           <div className="w-full space-y-10">
             <h1 className="text-4xl font-semibold max-w-md leading-[1.4]">Data Governance Solutions</h1>
             <div className="space-y-8 text-[#5A687B] max-w-3xl">
