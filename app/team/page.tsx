@@ -35,13 +35,13 @@ export default function page() {
         <div className="max-w-[1620px] mx-auto px-4 md:px-10">
           <div className="space-y-6">
             {teamMembersv2.map((member, index) => (
-              <div key={index} className="shadow-xl shadow-[#d6d6d6] ring-1 ring-[#d6d6d6] p-10 rounded-2xl ">
+              <div key={index} className="shadow-xl shadow-[#d6d6d6] ring-1 ring-[#d6d6d6] px-5 py-10 sm:p-10 rounded-2xl ">
                 <div className="relative flex gap-10">
                   {/* <Image src={member.image} alt="member" width={1000} height={1000} className="rounded-2xl w-[265px] object-cover h-[380px]" /> */}
                   <div className="">
                     <h1 className="text-2xl font-semibold">{member.names}</h1>
                     <p className="text-[#8993A0] text-base leading-[1.7]">{member.description}</p>
-                    <div className="flex mt-6">
+                    <div className="flex flex-col sm:flex-row mt-6 gap-6">
                       {member.industryExperience.length ? (
                         <div className="w-full">
                           <h1 className="text-xl font-semibold">Industry experience:</h1>
@@ -65,13 +65,13 @@ export default function page() {
                       {member.keyStrengthAreas.length ? (
                         <div className="w-full">
                           <h1 className="text-xl font-semibold">Key strength areas:</h1>
-                          <div className="flex ">
+                          <div className="flex flex-col sm:flex-row">
                             <ul className="w-full list-disc translate-x-6 pr-6 mt-2 text-base space-y-0.5 text-[#8993A0]">
                               {member.keyStrengthAreas.slice(0, 5).map((item, index) => (
                                 <li key={index}>{item}</li>
                               ))}
                             </ul>
-                            <ul className="w-full list-disc translate-x-6 pr-6 mt-2 text-base space-y-0.5 text-[#8993A0]">
+                            <ul className="w-full list-disc translate-x-6 pr-6 mt-0.5 sm:mt-2 text-base space-y-0.5 text-[#8993A0]">
                               {member.keyStrengthAreas.slice(5).map((item, index) => (
                                 <li key={index}>{item}</li>
                               ))}
