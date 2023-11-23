@@ -35,9 +35,9 @@ export default function page() {
         <div className="max-w-[1620px] mx-auto px-4 md:px-10">
           <div className="space-y-6">
             {teamMembersv2.map((member, index) => (
-              <div key={index} className="shadow-2xl shadow-[#ececec] p-10 rounded-2xl ">
+              <div key={index} className="shadow-xl shadow-[#d6d6d6] ring-1 ring-[#d6d6d6] p-10 rounded-2xl ">
                 <div className="relative flex gap-10">
-                  <Image src={member.image} alt="member" width={1000} height={1000} className="rounded-2xl w-[265px] object-cover h-[380px]" />
+                  {/* <Image src={member.image} alt="member" width={1000} height={1000} className="rounded-2xl w-[265px] object-cover h-[380px]" /> */}
                   <div className="">
                     <h1 className="text-2xl font-semibold">{member.names}</h1>
                     <p className="text-[#8993A0] text-base leading-[1.7]">{member.description}</p>

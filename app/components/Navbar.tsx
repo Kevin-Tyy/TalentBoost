@@ -1,9 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { ArrowRight, ChevronDown, MailIcon, Menu, SearchIcon } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
+import Image from "next/image";
 interface Props {
   isDark?: boolean;
 }
@@ -32,55 +35,56 @@ export default function Navbar({ isDark }: Props) {
     };
   }, [prevScrollPos]);
   const [isExpanded, setIsExpanded] = useState(false);
+  const navLinks = [
+    {
+      href: "/about",
+      label: "About Us",
+    },
+    {
+      href: "/data-governance-solutions",
+      label: "Data Governance Solutions",
+    },
+    {
+      href: "/training-solutions",
+      label: "Training Solutions",
+    },
+    {
+      href: "/team",
+      label: "Our team",
+    },
+    {
+      href: "/contact",
+      label: "Contact Us",
+    },
+  ];
+
+  const pathname = usePathname();
   return (
-    <nav
-      className={`${isDark && !isScrolled && "!text-white"} px-4 py-5 md:px-10 mx-auto navbar transition-all duration-500 fixed right-0 left-0 ${
-        visible ? `visible ${isScrolled && "bg-white shadow-2xl shadow-[#a5a5a53f]"}` : "hidden bg-white"
-      }
+    <div>
+      <nav
+        className={`${isDark && !isScrolled && "!text-white font-light"} px-4 py-5 md:px-10 mx-auto navbar transition-all duration-500 fixed right-0 left-0 ${
+          visible ? `visible ${isScrolled && "bg-white shadow-2xl shadow-[#a5a5a53f]"}` : "hidden bg-white"
+        }
       `}>
-      <div className="max-w-[1620px] w-full mx-auto flex items-center justify-between">
-        <div>
-          <h1 className="text-3xl">Logo</h1>
+        <div className="max-w-[1620px] w-full mx-auto flex items-center justify-between">
+          <div>
+            <Link href="/">
+              <Image src="/logo.svg" alt="logo" width={120} height={100} draggable={false} />
+            </Link>
+          </div>
+          <div className="hidden md:flex items-center gap-10">
+            {navLinks.map((link) => (
+              <Link href={link.href} key={link.href}>
+                <div className={clsx("flex gap-[10px] items-center cursor-pointer", pathname == link.href && "font-semibold")}>
+                  <h1 className="whitespace-nowrap">{link.label}</h1>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <Menu className="block md:hidden cursor-pointer" onClick={() => setIsExpanded(true)} />
         </div>
-        <div className="hidden md:flex items-center gap-10">
-          <Link href="/about">
-            <div className="cursor-pointer">
-              <h1>About Us</h1>
-            </div>
-          </Link>
-          <Link href="/enterprise-solutions">
-            <div className="flex gap-[10px] items-center cursor-pointer">
-              <h1>Enterprise Solution</h1>
-              <ChevronDown className="w-[20px]" />
-            </div>
-          </Link>
-          <Link href="/training-solutions">
-            <div className="flex gap-[10px] items-center cursor-pointer">
-              <h1>Training Solution</h1>
-              <ChevronDown className="w-[20px]" />
-            </div>
-          </Link>
-          <Link href="/team">
-            <div className="cursor-pointer">
-              <h1>Our team</h1>
-            </div>
-          </Link>
-          <Link href="/contact">
-            <div className="cursor-pointer">
-              <h1>Contact Us</h1>
-            </div>
-          </Link>
-          <div className={`${isDark ? "bg-[#fff]/20" : "bg-[#000000]/20"} w-[2px] h-[28px]`}></div>
-          <button className="cursor-pointer">
-            <SearchIcon />
-          </button>
-          <button className="border-[2px] border-[#FD7D4C] rounded-lg font-semibold h-[50px] w-[140px] hover:bg-[#fff]/10 transition duration-300 ">
-            Sign Up
-          </button>
-        </div>
-        <Menu className="block md:hidden cursor-pointer" onClick={() => setIsExpanded(true)} />
-      </div>
+      </nav>
       <Sidebar onClose={() => setIsExpanded(false)} isDark={isDark} isOpen={isExpanded} />
-    </nav>
+    </div>
   );
 }

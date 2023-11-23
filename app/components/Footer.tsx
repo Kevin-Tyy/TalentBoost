@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -6,9 +8,13 @@ export default function Footer() {
       <footer className="max-w-[1620px] mx-auto space-y-10">
         <div className="flex flex-col md:flex-row justify-between gap-y-14">
           <div className="w-full">
-            <h1 className="text-2xl text-white">Logo</h1>
+            <div>
+              <Link href="/">
+                <Image src="/logo.svg" alt="logo" width={140} height={100} draggable={false} />
+              </Link>
+            </div>{" "}
             <p className="text-[#8993A0] leading-loose max-w-2xl mt-6">
-              Lorem ipsum dolor sit amet consectetur. Nunc dui massa diam nibh tellus donec volutpat sed tempus. Euismod scelerisque mattis est tortor.
+              Lorem ipsum dolor sit amet consectetur. Nunc dui massa diam nibh tellus donec volutpat sed tempus. Euismod scelerisque mattis est tortor.{" "}
             </p>
           </div>
           <div className="space-y-6 md:w-1/3">
@@ -30,7 +36,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 mt-6">
           <h1 className="text-white">Follow Us</h1>
           <div className="flex gap-5">
             <img src="/svgs/twitter.svg" className="w-7" />
