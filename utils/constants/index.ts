@@ -85,7 +85,7 @@ export const teamMembersv2 = [
     image: "/person-3-v2.png",
     names: "Sam",
     description:
-      "is a data-driven operations professional with a background in data analytics and robotics. Passionate about numbers and data science with steering performance across industries and functions. He has over 15 years of experience in Analytics and Problem-Solving, financial planning, forecasting, and budgeting. Excellent command of MIS Management. Extensive knowledge and exposure in Retail, FMCG, BPO and Supply chain management. He is skilled in collecting, analyzing, and interpreting data to provide actionable recommendations that lead to measurable outcomes.",
+      "Sam is a data-driven operations professional with a background in data analytics and robotics. Passionate about numbers and data science with steering performance across industries and functions. He has over 15 years of experience in Analytics and Problem-Solving, financial planning, forecasting, and budgeting. Excellent command of MIS Management. Extensive knowledge and exposure in Retail, FMCG, BPO and Supply chain management. He is skilled in collecting, analyzing, and interpreting data to provide actionable recommendations that lead to measurable outcomes.",
     industryExperience: [],
     functionalExperience: [],
     keyStrengthAreas: [
