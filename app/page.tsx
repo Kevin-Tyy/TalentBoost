@@ -1,20 +1,20 @@
-import { courses, teamMembers } from "@/utils/constants";
+// import { courses, teamMembers } from "@/utils/constants";
 import Image from "next/image";
 import React from "react";
 import ContactForm from "./components/ContactForm";
-import { ChevronDown, Menu, SearchIcon } from "lucide-react";
+// import { ChevronDown, Menu, SearchIcon } from "lucide-react";
 import Footer from "./components/Footer";
-import Link from "next/link";
+// import Link from "next/link";
 import Navbar from "./components/Navbar";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import Slider from "./components/CourseSlider";
+// import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+// import Slider from "./components/CourseSlider";
 
 export default function Home() {
   return (
