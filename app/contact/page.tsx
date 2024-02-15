@@ -35,7 +35,7 @@ export default function page() {
                 </div>
                 <div className="flex gap-3 text-white">
                   <MapPin size={23} />
-                  <p className="max-w-xs leading-loose">132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
+                  <p className="max-w-xs leading-loose">22522 Parvine Lane, Katy, TX 77450</p>
                 </div>
               </div>
               <div className="flex gap-4">
