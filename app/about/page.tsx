@@ -50,19 +50,6 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="max-w-[1620px] mx-auto my-24 px-4 sm:px-10 ">
-        <h1 className="text-[40px] font-semibold text-center mb-14">Licenses and Certificates</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-          {certificates.map((certificate, index) => (
-            <div key={index} className="space-y-3">
-              <Image src={certificate.image} alt="certificate" width={1000} height={1000} />
-              <h1 className="text-xl font-semibold">{certificate.title}</h1>
-              <p className="text-sm text-[##505050] leading-[1.7]">{certificate.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <Footer />
     </main>
   );
