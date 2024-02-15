@@ -14,7 +14,8 @@ export default function Footer() {
               </Link>
             </div>{" "}
             <p className="text-[#8993A0] leading-loose max-w-2xl mt-6">
-              Lorem ipsum dolor sit amet consectetur. Nunc dui massa diam nibh tellus donec volutpat sed tempus. Euismod scelerisque mattis est tortor.{" "}
+              Boosting potential,driving excellence!
+              Your trusted training and consulting partner.{" "}
             </p>
           </div>
           <div className="space-y-6 md:w-1/3">
@@ -28,11 +29,11 @@ export default function Footer() {
             <h1 className="font-semibold text-white text-lg whitespace-nowrap">Reach Us Anytime</h1>
             <div className="flex gap-2 items-center text-[#D0D4D9]">
               <img src="/svgs/phone.svg" className="w-6" />
-              <p>(855) 616-0999</p>
+              <p>+1 713 832 4366</p>
             </div>
             <div className="flex gap-2 items-center text-[#D0D4D9]">
               <img src="/svgs/mail.svg" className="w-6" />
-              <p>sales@company.io</p>
+              <p>support@talentboostusa.com</p>
             </div>
           </div>
         </div>
@@ -46,7 +47,7 @@ export default function Footer() {
             <img src="/svgs/linkedin.svg" className="w-7" />
           </div>
         </div>
-        <p className="text-center text-[#fff]/40">© Company Name 2023. All Rights Reserved.</p>
+        <p className="text-center text-[#fff]/40">© TalentBoost Consulting 2023. All Rights Reserved.</p>
       </footer>
     </section>
   );

@@ -27,15 +27,15 @@ export default function page() {
               <div className="space-y-8">
                 <div className="flex items-center gap-3 text-white">
                   <PhoneCall size={20} />
-                  <p>+1012 3456 789</p>
+                  <p>+1 713 832 4366</p>
                 </div>
                 <div className="flex items-center gap-3 text-white">
                   <Mail size={20} />
-                  <p>demo@gmail.com</p>
+                  <p>support@talentboostusa.com</p>
                 </div>
                 <div className="flex gap-3 text-white">
                   <MapPin size={23} />
-                  <p className="max-w-xs leading-loose">132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
+                  <p className="max-w-xs leading-loose">22522 Parvine Lane, Katy, TX 77450</p>
                 </div>
               </div>
               <div className="flex gap-4">

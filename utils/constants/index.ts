@@ -85,7 +85,7 @@ export const teamMembersv2 = [
     image: "/person-3-v2.png",
     names: "Sam",
     description:
-      "is a data-driven operations professional with a background in data analytics and robotics. Passionate about numbers and data science with steering performance across industries and functions. He has over 15 years of experience in Analytics and Problem-Solving, financial planning, forecasting, and budgeting. Excellent command of MIS Management. Extensive knowledge and exposure in Retail, FMCG, BPO and Supply chain management. He is skilled in collecting, analyzing, and interpreting data to provide actionable recommendations that lead to measurable outcomes.",
+      "Sam is a data-driven operations professional with a background in data analytics and robotics. Passionate about numbers and data science with steering performance across industries and functions. He has over 15 years of experience in Analytics and Problem-Solving, financial planning, forecasting, and budgeting. Excellent command of MIS Management. Extensive knowledge and exposure in Retail, FMCG, BPO and Supply chain management. He is skilled in collecting, analyzing, and interpreting data to provide actionable recommendations that lead to measurable outcomes.",
     industryExperience: [],
     functionalExperience: [],
     keyStrengthAreas: [
@@ -99,49 +99,6 @@ export const teamMembersv2 = [
       "Business Intelligence",
       "Data Visualization",
     ],
-  },
-];
-
-export const certificates = [
-  {
-    image: "/certificate-1.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-2.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-3.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-4.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-5.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-6.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-7.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-8.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
   },
 ];
 
