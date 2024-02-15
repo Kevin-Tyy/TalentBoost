@@ -68,7 +68,7 @@ export default function Navbar({ isDark }: Props) {
       `}>
         <div className="max-w-[1620px] w-full mx-auto flex items-center justify-between">
           <div>
-            <Link href="/">
+            <Link href="/" className="max-h-20">
               <Image src="/logo.svg" alt="logo" width={120} height={100} draggable={false} />
             </Link>
           </div>
@@ -81,7 +81,24 @@ export default function Navbar({ isDark }: Props) {
               </Link>
             ))}
           </div>
-          <Menu className="block md:hidden cursor-pointer" onClick={() => setIsExpanded(true)} />
+          <div className="w-10 grid place-content-center ml-6 md:hidden">
+            <div
+              className="flex flex-col items-end justify-center rounded-md transition duration-100 p-2 space-y-[7px] cursor-pointer group"
+              onClick={() => setIsExpanded(true)}>
+              <span
+                className={`w-5 relative h-[2px] bg-[#8E93A4] block transition rounded-full duration-[.3s] ${
+                  isExpanded && "rotate-[135deg] translate-y-[9px] w-5"
+                }`}></span>
+              <span
+                className={`w-4 relative h-[2px] bg-[#8E93A4] transition  rounded-full duration-[.1s] opacity-100 ${
+                  isExpanded && "opacity-0 invisible"
+                } `}></span>
+              <span
+                className={`w-5 relative h-[2px] bg-[#8E93A4] rounded-full transition duration-[.3s] ${
+                  isExpanded && "-rotate-[135deg] -translate-y-[9px] w-5"
+                }`}></span>
+            </div>{" "}
+          </div>
         </div>
       </nav>
       <Sidebar onClose={() => setIsExpanded(false)} isDark={isDark} isOpen={isExpanded} />

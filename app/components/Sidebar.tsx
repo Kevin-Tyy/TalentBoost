@@ -53,15 +53,26 @@ export default function Sidebar({ isDark, onClose, isOpen }: Props) {
       ref={mainRef}
       className={`${
         isOpen ? "w-[300px]" : "w-0"
-      } overflow-hidden text-[#132742] bg-white fixed right-0 top-0 bottom-0 h-full min-h-screen shadow-2xl z-[9999999] transition-[width]`}>
-      <div className="pl-8 flex flex-col justify-between pt-5 pb-10 h-full">
+      } overflow-hidden text-[rgb(19,39,66)] bg-white fixed right-0 top-0 bottom-0 h-full min-h-screen shadow-2xl z-[999999] transition-[width]`}>
+      <div className="pl-6 pr-4 flex flex-col justify-between pt-5 pb-10 h-full">
         <div className="flex items-center justify-between w-full">
           <div>
             <Link href="/">
               <Image src="/logo.svg" alt="logo" width={120} height={100} draggable={false} />
             </Link>
           </div>
-          <X className="block md:hidden cursor-pointer mr-4" onClick={() => onClose()} />
+          <div className="flex flex-col items-end justify-center rounded-md transition duration-100 p-2 space-y-[7px] cursor-pointer  group" onClick={onClose}>
+            <span
+              className={`w-5 relative h-[2px] bg-[#8E93A4] block transition rounded-full duration-[.3s] ${
+                isOpen && "rotate-[135deg] translate-y-[9px] w-5"
+              }`}></span>
+            <span
+              className={`w-4 relative h-[2px] bg-[#8E93A4] transition  rounded-full duration-[.4s] opacity-100 ${isOpen && "!opacity-0 invisible"} `}></span>
+            <span
+              className={`w-5 relative h-[2px] bg-[#8E93A4] rounded-full transition duration-[.3s] ${
+                isOpen && "-rotate-[135deg] -translate-y-[9px] w-5"
+              }`}></span>
+          </div>
         </div>
 
         <div className="flex flex-col gap-10">

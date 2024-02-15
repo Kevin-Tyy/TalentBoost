@@ -13,7 +13,7 @@ export default function Footer() {
                 <Image src="/logo.svg" alt="logo" width={140} height={100} draggable={false} />
               </Link>
             </div>{" "}
-            <h1 className="text-3xl text-white font-bold leading-[1.4] flex flex-col max-w-md space-y-2">
+            <h1 className="text-2xl sm:text-3xl text-white font-bold leading-[1.4] flex flex-col max-w-md space-y-2">
               <span className="block">
                 <span className="text-red-orange">Boosting</span> potential,
               </span>
