@@ -102,49 +102,6 @@ export const teamMembersv2 = [
   },
 ];
 
-export const certificates = [
-  {
-    image: "/certificate-1.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-2.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-3.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-4.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-5.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-6.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-7.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-  {
-    image: "/certificate-8.png",
-    title: "Lorem ipsum dolor sit amet",
-    description: "Lorem ipsum dolor sit amet consectetur. Amet nunc sagittis vel massa turpis viverra est.",
-  },
-];
-
 export const courses = [
   {
     image: "/course-1.png",
