@@ -7,16 +7,21 @@ export default function Footer() {
     <section className="bg-[#132742] pt-10 pb-4 px-5 md:px-10 ">
       <footer className="max-w-[1620px] mx-auto space-y-10">
         <div className="flex flex-col md:flex-row justify-between gap-y-14">
-          <div className="w-full">
+          <div className="w-full space-y-10">
             <div>
               <Link href="/">
                 <Image src="/logo.svg" alt="logo" width={140} height={100} draggable={false} />
               </Link>
             </div>{" "}
-            <p className="text-[#8993A0] leading-loose max-w-2xl mt-6">
-              Boosting potential,driving excellence!
-              Your trusted training and consulting partner.{" "}
-            </p>
+            <h1 className="text-3xl text-white font-bold leading-[1.4] flex flex-col max-w-md space-y-2">
+              <span className="block">
+                <span className="text-red-orange">Boosting</span> potential,
+              </span>
+              <span className="block self-end">
+                driving <span className="text-red-orange">excellence</span>!
+              </span>
+            </h1>{" "}
+            <h2 className="text-lg font-semibold text-white">Your trusted training and consulting partner</h2>
           </div>
           <div className="space-y-6 md:w-1/3">
             <h1 className="font-semibold text-white text-lg">Links</h1>
